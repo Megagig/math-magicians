@@ -7,4 +7,16 @@ class Calculator extends Component {
       result: 0,
     };
   }
+
+  render() {
+    const { result } = this.state;
+    return (
+      <div>
+        <h1>Calculator</h1>
+        <p>Result: {result}</p>
+      </div>
+    );
+  }
 }
+
+export default Calculator;
