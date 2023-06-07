@@ -59,7 +59,7 @@ function Calculator() {
         <button type="button" className="operator-btn">
           .
         </button>
-        <button type="button" className="operator-btn orange-btn">
+        <button type="button" className="operator-btn">
           =
         </button>
       </div>
