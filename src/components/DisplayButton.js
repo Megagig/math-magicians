@@ -41,11 +41,10 @@ function DisplayButton({ onButtonClick }) {
           type="button"
           className="operator-btn orange-btn"
           onClick={handleButtonClick}
-          value="÷"
+          value="/"
         >
-          ÷
+          /
         </button>
-
         <button
           type="button"
           className="operator-btn"
