@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import '../App.css';
 import '../index.css';
 
-function displayButton({ onButtonClick }) {
+function DisplayButton({ onButtonClick }) {
   const handleButtonClick = (e) => {
     const buttonName = e.target.value;
     onButtonClick(buttonName);
@@ -41,10 +41,11 @@ function displayButton({ onButtonClick }) {
           type="button"
           className="operator-btn orange-btn"
           onClick={handleButtonClick}
-          value="/"
+          value="÷"
         >
-          /
+          ÷
         </button>
+
         <button
           type="button"
           className="operator-btn"
@@ -73,10 +74,11 @@ function displayButton({ onButtonClick }) {
           type="button"
           className="operator-btn orange-btn"
           onClick={handleButtonClick}
-          value="*"
+          value="x"
         >
           x
         </button>
+
         <button
           type="button"
           className="operator-btn"
@@ -170,8 +172,8 @@ function displayButton({ onButtonClick }) {
   );
 }
 
-displayButton.propTypes = {
+DisplayButton.propTypes = {
   onButtonClick: PropTypes.func.isRequired,
 };
 
-export default displayButton;
+export default DisplayButton;

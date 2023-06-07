@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DisplayButton from './DisplayButton'; // Corrected component name
-import Calculate from '../logic/Calculate';
+import Calculate from '../logic/calculate';
 import '../App.css';
 import '../index.css';
 
