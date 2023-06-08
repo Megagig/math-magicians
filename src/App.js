@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Calculator from './components/calculator';
+import GetQuotes from './components/displayQuote';
 
 function App() {
   const [calculatorObj, setCalculatorObj] = useState({
@@ -16,6 +17,7 @@ function App() {
         operation={calculatorObj.operation}
         setCalculatorObj={setCalculatorObj}
       />
+      <GetQuotes />
     </div>
   );
 }
