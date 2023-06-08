@@ -1,10 +1,13 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable no-lone-blocks */
 import React, { useState } from 'react';
 import Calculator from './components/calculator';
 
 function App() {
-  const [calculatorObj, setCalculatorObj] = useState(0);
+  const [calculatorObj, setCalculatorObj] = useState({
+    total: '0',
+    next: null,
+    operation: null,
+  });
+
   return (
     <div className="App">
       <Calculator
