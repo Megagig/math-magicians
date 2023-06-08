@@ -1,17 +1,36 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import '../App.css';
 import '../index.css';
+import React, { useState } from 'react';
+import Calculate from '../logic/calculate';
 
 function DisplayButton({ onButtonClick }) {
-  const handleButtonClick = (e) => {
+  let handleButtonClick = (e) => {
     const buttonName = e.target.value;
     onButtonClick(buttonName);
   };
+  const [displayValue, setDisplayValue] = useState('0');
+  const [calcData, setCalcData] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
+  handleButtonClick = (buttonName) => {
+    const newData = Calculate(calcData, buttonName);
+    setCalcData(newData);
+
+    if (newData.next !== null) {
+      setDisplayValue(newData.next);
+    } else if (newData.total !== null) {
+      setDisplayValue(newData.total);
+    } else {
+      setDisplayValue('0');
+    }
+  };
   return (
     <div className="calculator">
-      <input type="text" placeholder="0" disabled />
+      <div className="display">{displayValue}</div>
       <div className="buttons">
         <button
           type="button"

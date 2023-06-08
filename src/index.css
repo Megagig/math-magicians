@@ -1,3 +1,55 @@
+:root {
+  --primary-button-bc-color: #e0e0e0;
+  --border-color: #d9d6d4;
+  --result-bc-color: #858694;
+  --result-font-color: #fff;
+  --operators-bc-color: #f5913e;
+  --button-font-color: #000;
+  --cell-height: 50px;
+  --cell-width: 100px;
+}
+
+* {
+  font-size: 20px;
+}
+
+.calculator-container {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-width));
+  grid-template-rows: repeat(6, var(--cell-height));
+  justify-content: center;
+  margin-top: 112px;
+}
+
+.result-display {
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.5rem;
+  padding-top: 0.4rem;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.calc-button-style {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  line-height: var(--cell-height);
+  cursor: pointer;
+}
+
+.zero-button {
+  grid-area: 6/1/7/3;
+}
+
+.operators-buttons {
+  background-color: var(--operators-bc-color);
+}
+/* 
 .calculator {
   width: 250px;
   margin: 50px auto;
@@ -31,4 +83,4 @@ button {
 
 button:hover {
   background-color: #c1c1c1;
-}
+} */
