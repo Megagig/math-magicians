@@ -27,7 +27,7 @@ const GetQuotes = () => {
   }, []);
 
   return (
-    <div className="giant-quotes-quote">
+    <div className="display-quotes">
       <blockquote>
         <p>{isLoading ? 'Quotes Loading...' : error || quote}</p>
         <cite>{isLoading ? 'Author Loading...' : error || author}</cite>
