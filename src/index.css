@@ -49,6 +49,7 @@
 .operators-buttons {
   background-color: var(--operators-bc-color);
 }
+
 .display-quotes {
   display: inline-block;
   font-family: sans-serif;
@@ -70,6 +71,7 @@
   top: -0.4em;
   left: -0.2em;
 }
+
 .display-quotes ::after {
   content: close-quote;
   font-size: 5em;
