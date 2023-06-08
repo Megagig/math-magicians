@@ -55,3 +55,10 @@
   margin: 3em;
   max-width: 35em;
 }
+
+.display-quotes blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 3em;
+  position: relative;
+}
