@@ -28,7 +28,7 @@ const Navbar = () => {
       <footer style={footerStyles}>
         Crafted with code and creativity by
         {' '}
-        <b>Tumaini Maganiko</b>
+        <b>Obi Anthony</b>
         .
       </footer>
     </>
