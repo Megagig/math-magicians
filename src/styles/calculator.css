@@ -1,0 +1,277 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: rgb(238, 238, 238);
+  height: auto;
+  width: 100%;
+}
+
+:root {
+  --primary-button-bc-color: #e0e0e0;
+  --border-color: #d9d6d4;
+  --result-bc-color: #858694;
+  --result-font-color: #fff;
+  --operators-bc-color: #f5913e;
+  --button-font-color: #000;
+  --cell-height: 50px;
+  --cell-width: 100px;
+}
+
+.calculator-container {
+  padding-top: 1rem;
+  float: right;
+  display: grid;
+  grid-template-columns: repeat(4, var(--cell-width));
+  grid-template-rows: repeat(6, var(--cell-height));
+}
+
+.result {
+  grid-area: 1/1/2/5;
+  background: var(--result-bc-color);
+  color: var(--result-font-color);
+  text-align: right;
+  padding-right: 0.5rem;
+  padding-top: 0.4rem;
+  font-size: 26px;
+  font-weight: 600;
+  border: none;
+}
+
+.calc-button-style {
+  background-color: var(--primary-button-bc-color);
+  border: 1px solid var(--border-color);
+  color: var(--button-font-color);
+  text-align: center;
+  line-height: var(--cell-height);
+  cursor: pointer;
+}
+
+.zero-button {
+  grid-area: 6/1/7/3;
+}
+
+button.btn.orange {
+  background-color: var(--operators-bc-color);
+}
+
+.giant-quotes-quote {
+  display: inline-block;
+  font-family: sans-serif;
+  margin: 3em;
+  max-width: 35em;
+}
+
+.giant-quotes-quote blockquote {
+  display: inline-block;
+  margin: 0;
+  padding: 3em;
+  position: relative;
+}
+
+.giant-quotes-quote ::before {
+  color: #f90;
+  content: '\201C';
+  font-size: 4em;
+  left: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.giant-quotes-quote ::after {
+  color: #f90;
+  content: '\201D';
+  font-size: 4em;
+  right: 0;
+  line-height: 0.75em;
+  position: absolute;
+  top: 0;
+  transform: scale(2, 8);
+  transform-origin: top;
+}
+
+.giant-quotes-quote blockquote cite {
+  color: #c60;
+  display: block;
+  font-style: normal;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.header-container,
+.nav-ul {
+  display: flex;
+  color: #d9d6d4;
+}
+
+.header-container {
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 10vh;
+  border: 1px solid black;
+  background-color: rgb(70, 18, 18);
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  gap: 15%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+  height: 10vh;
+  border: 1px solid black;
+  background-color: rgb(205, 190, 190);
+}
+
+span {
+  padding: 10%;
+}
+
+@keyframes dance {
+  0% {
+    transform: rotate(0);
+  }
+
+  25% {
+    transform: rotate(-5deg);
+  }
+
+  50% {
+    transform: rotate(0deg);
+  }
+
+  75% {
+    transform: rotate(5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.home-container {
+  padding: 0 5%;
+  height: auto;
+}
+
+.home-container p {
+  font-size: 1.5em;
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+.cal-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+}
+
+.math-container {
+  width: 100%;
+  height: auto;
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-around;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+.para {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: auto;
+  padding: 0 5%;
+}
+
+.para p {
+  font-size: 1.2em;
+  font-weight: 400;
+  text-align: justify;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  height: auto;
+  padding-right: 2%;
+}
+
+.wide-btn {
+  width: 50%;
+}
+
+.show,
+.btn-container {
+  width: 100%;
+  height: 10vh;
+  color: white;
+  font-size: 2em;
+  text-align: end;
+}
+
+button {
+  width: 25%;
+  height: 10vh;
+  font-size: 0.8em;
+}
+
+.orange-btn {
+  background-color: rgba(255, 68, 0, 0.46);
+}
+
+li {
+  list-style: none;
+  font-size: 2em;
+  font-variant-numeric: ordinal;
+}
+
+a {
+  text-decoration: none;
+}
+
+.quotes-container p {
+  font-size: 2em;
+  padding: 7%;
+}
+
+.zero {
+  width: 50%;
+}
+
+footer {
+  width: 100%;
+  height: 7vh;
+  top: auto;
+  background-color: rgb(205, 190, 190);
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grey-button {
+  background-color: gray;
+}

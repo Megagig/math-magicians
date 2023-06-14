@@ -1,25 +1,26 @@
-import React, { useState } from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Navbar from './components/NavBar';
 import Calculator from './components/calculator';
 import GetQuotes from './components/displayQuote';
+import Home from './components/Home';
 
-function App() {
-  const [calculatorObj, setCalculatorObj] = useState({
-    total: '0',
-    next: null,
-    operation: null,
-  });
+const Layout = () => (
+  <>
+    <Navbar />
+  </>
+);
 
-  return (
-    <div className="App">
-      <Calculator
-        total={calculatorObj.total}
-        next={calculatorObj.next}
-        operation={calculatorObj.operation}
-        setCalculatorObj={setCalculatorObj}
-      />
-      <GetQuotes />
+const App = () => (
+  <BrowserRouter>
+    <Layout />
+    <div className="cal-container">
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/calculator" element={<Calculator />} />
+        <Route path="/quotes" element={<GetQuotes />} />
+      </Routes>
     </div>
-  );
-}
+  </BrowserRouter>
+);
 
 export default App;
