@@ -7,32 +7,25 @@ const Navbar = () => {
     { path: 'calculator', text: 'Calculator' },
   ];
 
-  const footerStyles = {
+  const footer = {
     position: 'fixed',
     bottom: '0px',
     right: '10px',
   };
-
   return (
     <>
       <nav className="navbar">
         <h1>Math Magicians</h1>
         <ul>
           {links.map((link) => (
-            <li key={link.path}>
+            <li key={link.text}>
               <NavLink to={link.path}>{link.text}</NavLink>
             </li>
           ))}
         </ul>
       </nav>
-      <footer style={footerStyles}>
-        Crafted with code and creativity by
-        {' '}
-        <b>Obi Anthony</b>
-        .
-      </footer>
+      <footer style={footer}>All Right Reserve @Megagig 2023</footer>
     </>
   );
 };
-
 export default Navbar;
