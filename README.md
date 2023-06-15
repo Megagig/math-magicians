@@ -90,6 +90,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -186,11 +187,9 @@ npm start
 
 Coming soon
 
-### Deployment
+## 🚀 Live Demo <a name="live-demo"></a>
 
-Coming soon
-
-
+- [Live Demo Link](https://math-magicians-8cw7.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
