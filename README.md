@@ -69,9 +69,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
 
-
 <a name="readme-top"></a>
-
 
 <div align="center">
 
@@ -86,10 +84,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖  MATH MAGICIANS PROJECT ](#--math-magicians-project-)
+- [📖 MATH MAGICIANS PROJECT ](#--math-magicians-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+    - [🚀 Live Demo](#live-demo)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -106,11 +105,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖  MATH MAGICIANS PROJECT <a name="about-project"></a>
-
-
+# 📖 MATH MAGICIANS PROJECT <a name="about-project"></a>
 
 ## 🛠 Built With <a name="built-with"></a>
+
 1. HTML
 2. CSS
 3. JAVASCRIPT
@@ -128,21 +126,15 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
   </ul>
 </details>
 
-
-
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
-
-
-- COMING SOON
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
-
 
 To get a local copy up and running, follow these steps.
 
@@ -156,7 +148,6 @@ To get a local copy up and running, follow these steps.
 
 Clone this repository to your desired folder:
 
-
 Run this command:
 
 ```sh
@@ -167,7 +158,6 @@ Run this command:
 ### Install
 
 Install this project with:
-
 
 command:
 
@@ -184,20 +174,15 @@ npm start
 
 ### Run tests
 
-Coming soon
+## 🚀 Live Demo <a name="live-demo"></a>
 
-### Deployment
-
-Coming soon
-
-
+- [Live Demo Link](https://math-magicians-8cw7.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
 
 ## 👥 Author <a name="authors"></a>
-
 
 👤 ** Obi Anthony **
 
@@ -210,11 +195,12 @@ Coming soon
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
+
 - Add Components.
--  Add Events.
--  Fetch data from API.
--  Tests.
--  Deployment.
+- Add Events.
+- Fetch data from API.
+- Tests.
+- Deployment.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
@@ -231,15 +217,13 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-
-If you like this project rate me star 
+If you like this project rate me star
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
 
 I would like to thank Microverse
 
