@@ -11,7 +11,7 @@ describe('Buttons component', () => {
     const className = 'custom-button';
 
     const { getByText } = render(
-      <Buttons value={value} className={className} handleClick={handleClick} />
+      <Buttons value={value} className={className} handleClick={handleClick} />,
     );
 
     const buttonElement = getByText(value);
@@ -25,7 +25,7 @@ describe('Buttons component', () => {
     const className = 'custom-button';
 
     const { getByText } = render(
-      <Buttons value={value} className={className} handleClick={handleClick} />
+      <Buttons value={value} className={className} handleClick={handleClick} />,
     );
 
     const buttonElement = getByText(value);
@@ -48,7 +48,7 @@ describe('Buttons snapshot', () => {
           value={value}
           className={className}
           handleClick={handleClick}
-        />
+        />,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();

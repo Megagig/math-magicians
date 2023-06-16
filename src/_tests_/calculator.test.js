@@ -1,7 +1,8 @@
 import React from 'react';
-import Calculator from '../components/calculator';
 import { render, screen } from '@testing-library/react';
+import 'regenerator-runtime/runtime';
 import renderer from 'react-test-renderer';
+import Calculator from '../components/calculator';
 
 describe('Calculator component', () => {
   test('renders calculator with correct button labels', () => {
@@ -29,10 +30,10 @@ describe('Calculator component', () => {
       '=',
     ];
 
-    for (const label of button) {
+    button.forEach((label) => {
       const buttonEl = screen.queryAllByText(label);
       expect(buttonEl.length).toBeGreaterThanOrEqual(0);
-    }
+    });
   });
 });
 

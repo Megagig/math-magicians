@@ -1,6 +1,7 @@
 import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
+import 'regenerator-runtime/runtime';
 import '@testing-library/jest-dom/extend-expect';
 import renderer from 'react-test-renderer';
 
@@ -11,15 +12,15 @@ describe('NavBar component', () => {
     render(
       <BrowserRouter>
         <NavBar />
-      </BrowserRouter>
+      </BrowserRouter>,
     );
 
     const buttonLabels = ['Home', 'Quotes', 'Calculator'];
 
-    for (const label of buttonLabels) {
+    buttonLabels.forEach((label) => {
       const buttonElement = screen.getByText(label);
       expect(buttonElement).toBeInTheDocument();
-    }
+    });
   });
 });
 describe('NavBar snapshot', () => {
@@ -28,7 +29,7 @@ describe('NavBar snapshot', () => {
       .create(
         <BrowserRouter>
           <NavBar />
-        </BrowserRouter>
+        </BrowserRouter>,
       )
       .toJSON();
     expect(tree).toMatchSnapshot();
