@@ -174,11 +174,11 @@ npm start
 
 ### Run tests
 
+<!-- LIVE DEMO LINK -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-### Deployment
-
-Coming soon
+- [Live Demo Link](https://math-magicians-8cw7.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
